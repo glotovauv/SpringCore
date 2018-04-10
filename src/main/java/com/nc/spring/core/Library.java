@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Library {
     @Autowired
-    @Qualifier("TerminatorQuoter")
+    @Qualifier("terminatorQuoter")
     private Quoter quoter;
 
     public void doSmth() {

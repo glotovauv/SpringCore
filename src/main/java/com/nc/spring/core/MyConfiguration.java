@@ -7,12 +7,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 public class MyConfiguration {
-    @Bean(name = "MyQuoter")
+    @Bean(name = "myQuoter")
     public Quoter quoter1() {
         return new MyQuoter();
     }
 
-    @Bean(name = "TerminatorQuoter")
+    @Bean(name = "terminatorQuoter")
     public Quoter quoter2() {
         return new TerminatorQuoter();
     }
