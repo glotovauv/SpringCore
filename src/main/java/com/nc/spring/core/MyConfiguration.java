@@ -8,22 +8,22 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class MyConfiguration {
     @Bean(name = "MyQuoter")
-    public Quoter quoter1(){
+    public Quoter quoter1() {
         return new MyQuoter();
     }
 
     @Bean(name = "TerminatorQuoter")
-    public Quoter quoter2(){
+    public Quoter quoter2() {
         return new TerminatorQuoter();
     }
 
     @Bean
-    public Library library(){
+    public Library library() {
         return new Library();
     }
 
     @Bean
-    InjectRandomIntAnnotationBeanPostProcessor getBean(){
+    InjectRandomIntAnnotationBeanPostProcessor getBean() {
         return new InjectRandomIntAnnotationBeanPostProcessor();
     }
 }

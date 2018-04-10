@@ -8,7 +8,7 @@ public class Library {
     @Qualifier("TerminatorQuoter")
     private Quoter quoter;
 
-    public void doSmth(){
+    public void doSmth() {
         quoter.saySmth();
     }
 }

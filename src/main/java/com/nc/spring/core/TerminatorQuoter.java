@@ -7,13 +7,13 @@ public class TerminatorQuoter implements Quoter {
     private int repeat;
 
     @PostConstruct
-    void init(){
+    void init() {
         System.out.println("My repeat = " + repeat);
     }
 
     @Override
     public void saySmth() {
-        for (int i = 0; i < repeat; i++){
+        for (int i = 0; i < repeat; i++) {
             System.out.println("I'm terminator!");
         }
     }
